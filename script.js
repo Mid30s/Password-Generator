@@ -14,17 +14,17 @@ var Special = [" ","~", "`", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "
 var arrCharacters = [];
 
 function generatePassword() {
-  var passwordLength = 0;
   //choose password length
+
+  var passwordLength = 0;
   passwordLength = prompt ("Choose a password between 8 and 128 characters.")
   if ((passwordLength < 8 || passwordLength > 128) || isNaN(passwordLength)) {
     passwordLength = prompt("Please try again! Choose at least between 8-128 characters.");
   }else {
-    alert("Your password will be " + passwordLength + " characters long.");
-     
+    alert("Your password will be " + passwordLength + " characters long.");    
   }
 
-  //choose to include lowercase
+  //confirm to include lowercase
   includeLowercase = confirm("Do you want to include lowercase characters?");
   if (includeLowercase) {
     alert("Your password will included lowercase characters.");
@@ -32,7 +32,7 @@ function generatePassword() {
     alert("Your password will not included lowercase characters.")
   }
 
-  //choose to include uppercase   
+  //confirm to include uppercase   
   includeUppercase = confirm("Do you want to include uppercase characters?");
   if (includeUppercase) {
     alert("Your password will included uppercase characters.");
@@ -40,7 +40,7 @@ function generatePassword() {
     alert("Your password will not included uppercase characters.")
   }
 
-  //choose to include number 
+  //confirm to include number 
   includeNumbers = confirm("Do you want to include numbers?");
   if (includeNumbers) {
     alert("Your password will include numbers.");
@@ -48,7 +48,7 @@ function generatePassword() {
     alert("Your password will not include numbers.");
   }
   
-  //choose to include special characters
+  //confirm to include special characters
   includeSpecial = confirm("Do you want to include special characters?");
   if (includeSpecial) {
     alert("Your password will include special characters.");
@@ -56,7 +56,7 @@ function generatePassword() {
     alert("Your password will not include special characters.")
   }
 
-  //No character selected 
+  //No character selected situation
   if (includeLowercase === false && includeUppercase === false && includeNumbers === false && includeSpecial === false) {
       passwordLength = prompt("No characters was selected, Please try again! How many characters do you want to use for your password? Choose between 8-128 characters.");
   };
@@ -77,7 +77,7 @@ function generatePassword() {
   if (includeSpecial){
   arrCharacters = arrCharacters.concat(Special);
   }
- //TEST
+ //test random number
  console.log("Test: " + arrCharacters[Math.floor(Math.random() * arrCharacters.length)]);
 
  //create password
