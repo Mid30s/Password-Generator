@@ -1,34 +1,30 @@
 # Password-Generator
 
-# Personal-Profile
-
-
-Design a personal profile webpage to potential employer.
+Design a password generator that will provide a password which is limited to be between 8 and 128 characters in length. The user is prompted if they would like to include upper case letters, lower case letters, numbers and/or special characters. Once the user answers each prompt they will be given a unique password on the screen that is tailored to their responses.
 
 ## Acceptance Criteria
 
-* GIVEN I need to sample a potential employee's previous work
-* WHEN I load their portfolio
-* THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
-* WHEN I click one of the links in the navigation
-* THEN the UI scrolls to the corresponding section
-* WHEN I click on the link to the section about their work
-* THEN the UI scrolls to a section with titled images of the developer's applications
-* WHEN I am presented with the developer's first application
-* THEN that application's image should be larger in size than the others
-* WHEN I click on the images of the applications
-* THEN I am taken to that deployed application
-* WHEN I resize the page or view the site on various screens and devices
-* THEN I am presented with a responsive layout that adapts to my viewport
-
+```
+GIVEN I need a new, secure password
+WHEN I click the button to generate a password
+THEN I am presented with a series of prompts for password criteria
+WHEN prompted for password criteria
+THEN I select which criteria to include in the password
+WHEN prompted for the length of the password
+THEN I choose a length of at least 8 characters and no more than 128 characters
+WHEN asked for character types to include in the password
+THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
+WHEN I answer each prompt
+THEN my input should be validated and at least one character type should be selected
+WHEN all prompts are answered
+THEN a password is generated that matches the selected criteria
+WHEN the password is generated
+THEN the password is either displayed in an alert or written to the page
+```
 
 ## Description
 
-This is the first web page I build since I started coding. It is a big challenge to me from the beginning. However,I know all things are difficult before they are easy. Last two week, I learn lots of knowledge about HTML and CSS. This profile page is good way to show my study result.
 
-The first problem I have is flexbox layout in CSS. The navigation bar and projects photos are just go randomly in page. One reason is I do not have a good html layout (such as: correct container). Another one is I am not good at flexbox layout. So I spend more than half day to watch zoom recording about flex layout section. And I also reverse engineered the class mini project code. which I have learned how to make a correct flexbox layout and media query.
-
-What I learn most in this challenge is how to plan and design a web page. A logical HTML structure is the most important lesson that I learned. Since when I begin to add css code, half of my time spend on how to fix bugs in HTML structure.  I realized the importance to have a good logical structure. It will save me a lot of time next time. I also practice css that I learn this week,including hover selector and css button style.
 
 
 ## Installation
@@ -39,11 +35,13 @@ N/A
 
 To view this application,the following image shows the landing page of the application, or click on https://mid30s.github.io/Password-Generator/
 
-![Gary's Profile](./assets/images/profile-page.gif)
+![password-generator](./assets/images/password-generator-1.png)
+![password-generator](./assets/images/password-generator-2.png)
+![password-generator](./assets/images/password-generator-3.png)
 
 ## Credits
 
-N/A
+Thanks for the start code provided by the web bootcamp.
 
 ## License
 
